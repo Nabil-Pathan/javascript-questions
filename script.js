@@ -496,6 +496,16 @@ const strresult = str2.split(" ").map((str)=>{
 // console.log(strresult);
 
 
+const people = [
+    { name: 'John', age: 17 },
+    { name: 'Jane', age: 22 },
+    { name: 'Mike', age: 30 },
+    { name: 'Anna', age: 15 }
+  ];
+  
+
+const ageSum = people.map((people)=> people.age).filter((age)=> age > 18).reduce((acc,age)=> acc + age, 0)
+
 
 
 
